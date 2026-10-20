@@ -24,7 +24,7 @@ def hasil_prediksi():
         fg="#42e8f5"
     ).pack(pady=(30, 20))
 
- tk.Label(
+tk.Label(
         jendela_hasil,
         text="Prodi Pilihan: Teknologi Informasi",
         font=("Arial", 12, "bold"),
@@ -32,11 +32,24 @@ def hasil_prediksi():
         fg="white"
     ).pack(pady=10)
 
-    tk.Button(
+tk.Button(
         jendela_hasil,
         text="Tutup",
         command=jendela_hasil.destroy
     ).pack(pady=15)
+
+# 3. Label judul aplikasi
+judul = tk.Label(
+    root,
+    text="Aplikasi Prediksi Prodi Pilihan",
+    font=("Arial", 16, "bold"),
+    bg="#202b68",
+    fg="white"
+)
+judul.pack(pady=20)
+
+
+
 
 
 
