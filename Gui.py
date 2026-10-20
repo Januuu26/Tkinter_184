@@ -38,7 +38,6 @@ tk.Button(
         command=jendela_hasil.destroy
     ).pack(pady=15)
 
-# 3. Label judul aplikasi
 judul = tk.Label(
     root,
     text="Aplikasi Prediksi Prodi Pilihan",
@@ -49,9 +48,22 @@ judul = tk.Label(
 judul.pack(pady=20)
 
 
+# 4. Input 10 nilai mata pelajaran
+frame_input = tk.Frame(root, bg="#202b68")
+frame_input.pack(padx=40, fill="x")
 
+input_nilai = []
 
+for i in range(1, 11):
+    baris = tk.Frame(frame_input, bg="#202b68")
+    baris.pack(fill="x", pady=4)
 
-
-   
-
+    tk.Label(
+        baris,
+        text=f"Nilai Mata Pelajaran {i}:",
+        font=("Arial", 10),
+        bg="#202b68",
+        fg="white",
+        width=25,
+        anchor="w"
+    ).pack(side="left")
