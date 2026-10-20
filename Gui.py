@@ -78,7 +78,6 @@ for i in range(1, 11):
     input_nilai.append(entry_nilai)
 
 
-# 5. Label pilihan jurusan
 tk.Label(
     root,
     text="Pilihan Jurusan Anda:",
@@ -87,4 +86,8 @@ tk.Label(
     fg="white"
 ).pack(pady=(15, 5))
 
+
+pilihan_jurusan = tk.StringVar(
+    value="Teknologi Informasi"
+)
 
