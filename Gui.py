@@ -78,3 +78,13 @@ for i in range(1, 11):
     input_nilai.append(entry_nilai)
 
 
+# 5. Label pilihan jurusan
+tk.Label(
+    root,
+    text="Pilihan Jurusan Anda:",
+    font=("Arial", 10, "bold"),
+    bg="#202b68",
+    fg="white"
+).pack(pady=(15, 5))
+
+
