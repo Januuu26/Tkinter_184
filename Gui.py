@@ -9,7 +9,6 @@ root.resizable(False, False)
 root.configure(bg="#202b68")
 
 
-# 2. Fungsi untuk menampilkan hasil prediksi
 def hasil_prediksi():
     jendela_hasil = tk.Toplevel(root)
     jendela_hasil.title("Hasil Prediksi Prodi")
@@ -24,6 +23,22 @@ def hasil_prediksi():
         bg="#182653",
         fg="#42e8f5"
     ).pack(pady=(30, 20))
+
+ tk.Label(
+        jendela_hasil,
+        text="Prodi Pilihan: Teknologi Informasi",
+        font=("Arial", 12, "bold"),
+        bg="#182653",
+        fg="white"
+    ).pack(pady=10)
+
+    tk.Button(
+        jendela_hasil,
+        text="Tutup",
+        command=jendela_hasil.destroy
+    ).pack(pady=15)
+
+
 
    
 
