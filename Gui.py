@@ -90,4 +90,19 @@ tk.Label(
 pilihan_jurusan = tk.StringVar(
     value="Teknologi Informasi"
 )
+dropdown_jurusan = ttk.Combobox(
+    root,
+    textvariable=pilihan_jurusan,
+    values=[
+        "Teknologi Informasi",
+        "Informatika",
+        "Sistem Informasi",
+        "Teknik Komputer",
+        "Manajemen Informatika"
+    ],
+    state="readonly",
+    width=27
+)
+dropdown_jurusan.pack()
+
 
