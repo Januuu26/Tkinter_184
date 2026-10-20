@@ -105,4 +105,16 @@ dropdown_jurusan = ttk.Combobox(
 )
 dropdown_jurusan.pack()
 
+tk.Button(
+    root,
+    text="Hasil Prediksi",
+    command=hasil_prediksi,
+    font=("Arial", 11, "bold"),
+    bg="#e3e9ff",
+    fg="#202b68",
+    padx=15,
+    pady=6,
+    cursor="hand2"
+).pack(pady=22)
+
 
