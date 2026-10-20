@@ -117,4 +117,6 @@ tk.Button(
     cursor="hand2"
 ).pack(pady=22)
 
+root.mainloop()
+
 
