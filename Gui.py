@@ -48,7 +48,6 @@ judul = tk.Label(
 judul.pack(pady=20)
 
 
-# 4. Input 10 nilai mata pelajaran
 frame_input = tk.Frame(root, bg="#202b68")
 frame_input.pack(padx=40, fill="x")
 
@@ -67,3 +66,15 @@ for i in range(1, 11):
         width=25,
         anchor="w"
     ).pack(side="left")
+
+
+    entry_nilai = tk.Entry(
+        baris,
+        font=("Arial", 10),
+        width=20
+    )
+    entry_nilai.pack(side="right")
+
+    input_nilai.append(entry_nilai)
+
+
